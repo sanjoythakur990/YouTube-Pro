@@ -4,14 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <input id="search-input">
+    <!-- https://www.citypng.com/public/uploads/preview/-51609516331ylqch0vmc9.png?v=2023071310 -->
+    <!-- navbar -->
+    <nav class="navbar">
+        <section class="logoNbtn">
+            <div class="toggle-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <a href=""><img class="logo" src="./images/YouTube-White-Full-Color-Logo.wine.svg" height="55px"
+                    alt=""></a>
+        </section>
+        <section class="nav-search">
+            <input type="text" id="search-input" class="nav-input" placeholder="Search">
+            <button id="search-btn" class="nav_search_btn"><img src="./images/searchlogo.svg" alt=""></button>
+            <img class="voice-search" src="./images/mic.svg" alt="">
+        </section>
+
+        <section class="end">
+            <img src="./images/addvideo.svg" class="displaynav" alt="">
+            <img src="./images/apps.svg" class="displaynav" alt="">
+            <img src="./images/notification.svg" class="displaynav" alt="">
+            <img class="profile-img" src="./images/20230111191310370(square pic).jpg" alt="">
+
+        </section>
+    </nav>
+
+
+    <div class="side-bar">
+        <a href="#" class="links active"><img src="./images/home.png" style="filter: grayscale(1) brightness(7);" alt="">home</a>
+        <a href="#" class="links"><img src="./images/explore.png" alt="">explore</a>
+        <a href="#" class="links"><img src="images/subscription.PNG" alt="">subscription</a>
+        <hr class="seperator">
+        <a href="#" class="links"><img src="images/library.PNG" alt="">library</a>
+        <a href="#" class="links"><img src="images/history.PNG" alt="">history</a>
+        <a href="#" class="links"><img src="images/your-video.PNG" alt="">your video</a>
+        <a href="#" class="links"><img src="images/watch-later.PNG" alt="">watch later</a>
+        <a href="#" class="links"><img src="images/liked video.PNG" alt="">liked video</a>
+        <hr class="seperator">
+        <a href="#" class=""><img src="./images/subscription.svg" alt=""></a>
+        <!-- <h4 style="margin: 0 10px; color:grey"> SUBSCRIPTIONS</h4>
+            <a href="#" class="links"><img src="images/show more.PNG" alt="">show more</a>
+            <a href="#" class="links"><img src="images/show more.PNG" alt="">show more</a>
+            <a href="#" class="links"><img src="images/show more.PNG" alt="">show more</a> -->
+        <a href="#" class=""><img src="./images/morefromyoutube.svg" alt=""></a>
+        <hr class="seperator">
+
+    </div>
+
+
+
+    <!-- filters -->
+    <div class="filters">
+        <button class="filter-options hover-button">all</button>
+        <button class="filter-options hover-button">html</button>
+        <button class="filter-options hover-button">CSS</button>
+        <button class="filter-options hover-button">javascript</button>
+        <button class="filter-options hover-button">web development</button>
+        <button class="filter-options hover-button">python</button>
+        <button class="filter-options hover-button">entertainment</button>
+        <button class="filter-options hover-button">marvel</button>
+        <button class="filter-options hover-button">artificial intelligence</button>
+        <button class="filter-options hover-button">machine learning</button>
+        <button class="filter-options hover-button">trending</button>
+    </div>
+
+
+
+    <!-- videos -->
+    <div class="video-container" id="videos-container"></div>
+
+
+
+
+    <!-- <input id="search-input">
     <button id="search-btn">Search</button>
 
     <ol id="videos-container">
-        <!-- List of videos -->
-    </ol>
+        
+    </ol> -->
     <script src="./script.js"></script>
 </body>
 </html>

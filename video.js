@@ -1,4 +1,5 @@
-const API_KEY = "AIzaSyC16Q7YsJ3bSd8Qrfr6Gg1qHeQ7hRyiJ9c";
+// const API_KEY = "AIzaSyC16Q7YsJ3bSd8Qrfr6Gg1qHeQ7hRyiJ9c";
+const API_KEY= "AIzaSyBmOfUnRNYc22e04ZmK79uRbPb6388K9AE";
 const BASE_KEY= "https://www.googleapis.com/youtube/v3";
 
 
@@ -10,7 +11,7 @@ window.addEventListener("load",()=>{
 
     if (YT) {
         new YT.Player('video-container', {
-            height: "500",
+            height: "420",
             width: "1000",
             videoId: videoId
         });
@@ -21,6 +22,15 @@ window.addEventListener("load",()=>{
         .then((res)=> res.json())
         .then((data)=> {
             console.log("video details", data);
+            document.getElementById("channelInfo").innerHTML=""
+            document.getElementById("channelInfo").innerHTML += `
+              <img src="${data.items[0].snippet.thumbnails.high.url}" class="channel-icon" alt="">
+              <h5 class="channelName">${data.items[0].snippet.title}</h5>
+              <p style="color:grey">${data.items[0].statistics.subscriberCount} Subscribers</p>
+        `;
+        document.getElementById("description").innerHTML = `
+          <p>${data.items[0].snippet.localized.description} </p>
+          `;
             console.log(data.items[0].snippet.channelId);
             getChannelDetails(data.items[0].snippet.channelId);
         })

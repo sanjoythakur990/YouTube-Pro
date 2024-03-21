@@ -4,12 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./video.css">
 </head>
 <body>
-    <h1>Video</h1>
-    <div id="video-container">
-        <!--  where video will be kept -->
-    </div>
+    <!-- navbar -->
+    <nav class="navbar">
+        <section class="logoNbtn">
+            <div class="toggle-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <a href=""><img class="logo" src="./images/YouTube-White-Full-Color-Logo.wine.svg" height="55px"
+                    alt=""></a>
+        </section>
+        <section class="nav-search">
+            <input type="text" id="search-input" class="nav-input" placeholder="Search">
+            <button id="search-btn" class="nav_search_btn"><img src="./images/searchlogo.svg" alt=""></button>
+            <img class="voice-search" src="./images/mic.svg" alt="">
+        </section>
+
+        <section class="end">
+            <img src="./images/addvideo.svg" class="displaynav" alt="">
+            <img src="./images/apps.svg" class="displaynav" alt="">
+            <img src="./images/notification.svg" class="displaynav" alt="">
+            <img class="profile-img" src="./images/20230111191310370(square pic).jpg" alt="">
+
+        </section>
+    </nav>
+
+
+    <!-- <div id="video-container">
+        
+    </div> -->
+
+    <main class="80percdiv">
+        <section class="left">
+            <ol style="border: 1px solid black;" class="myDiv iframevideo" id="video-container">
+            </ol>
+            <div class="video_name" id="video_title_container">
+                <!-- <h3 id="video_title">GAADI KAALI Dance Cover | Neha Kakkar, Rohanpreet Singh | Mohit Jain's Dance
+                    Institute MJDi</h3> -->
+                <img src="./images/likeViewShare.svg" alt="">
+            </div>
+            <div class="channelnameSubscribe">
+                <span class="channelInfo" id="channelInfo">
+                    <img src="" class="channel-icon" alt="">
+                    <h5 class="channelName">Sanjoy Thakur</h5>
+                    <p style="color:grey"></p>
+                </span>
+                <img src="./images/subscribe_logo.svg" class="subscribe" alt="">
+            </div>
+            <div id="description">
+                <p>
+
+
+                </p>
+            </div>
+            <hr class="border-line">
+
+            <div class="comments" id="comments">
+                <span>286 Comments</span>
+                <a><img src="images/menu.png" width="20px"> SORT BY</a>
+                <br>
+                <br>
+            </div>
+            <div class="public_comments">
+                <img src="./images/20230111191310370(square pic).jpg" class="profile-img" alt="">
+                <p>Add a public Comment</p>
+            </div>
+
+            <div class="other_comments" id="other_comments">
+                <!-- <img src="./images/profileSK.jpg" class="profile-img" alt="">
+                    <span class="break">Add a public channel-name</span>  -->
+                <!-- <p class="user_comment" id="user_comment">hello</p> -->
+
+            </div>
+            <!-- <br> -->
+
+
+        </section>
+        <section class="right">
+            <img class="relatedContent" src="./svgs/relatedcontent.svg" alt="">
+            <img class="relatedContent" src="./svgs/relatedcontent.svg" alt="">
+
+
+        </section>
+
+    </main>
     <!-- official script yt - cdn -->
     <script src="https://www.youtube.com/iframe_api"></script>
     <script src="./video.js"></script>
