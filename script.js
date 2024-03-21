@@ -5,7 +5,7 @@ const BASE_KEY= "https://www.googleapis.com/youtube/v3";
 // GET VIDEOS
 // let query="cars";
 function getVideos(query){
-    fetch(`${BASE_KEY}/search?key=${API_KEY}&type=video&q=${query}&maxResults=2&part=snippet`)
+    fetch(`${BASE_KEY}/search?key=${API_KEY}&type=video&q=${query}&maxResults=50&part=snippet`)
     .then((res)=> res.json())
     .then((data)=>{
         // console.log(data);
