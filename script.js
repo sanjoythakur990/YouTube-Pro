@@ -1,4 +1,4 @@
-const API_KEY = "AIzaSyC16Q7YsJ3bSd8Qrfr6Gg1qHeQ7hRyiJ9c";
+const API_KEY = "AIzaSyC16Q7YsJ3bSd8Qrfr6Gg1qHeQ7hRyiJ9c"
 const BASE_KEY= "https://www.googleapis.com/youtube/v3";
 
 // GET VIDEOS
@@ -34,3 +34,4 @@ function displayVideos(videos){
         `
     })
 }
+console.log(process.env.API_KEY_PROTECTED);
